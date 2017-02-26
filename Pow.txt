@@ -1,0 +1,7 @@
+long long power(int x, int y)
+{
+	if (y == 0)return 1;
+	long long u = power(x, y / 2);
+	if (y % 2 == 0)return u*u;
+	return u*u*x;
+}
